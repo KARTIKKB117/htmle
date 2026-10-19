@@ -1,0 +1,25 @@
+
+<html>
+<body>
+<h3>Fibonacci Series</h3>
+Enter terms: <input id="n">
+<button onclick="check()">Print</button>
+<p id="result"></p>
+
+<script>
+function check() {
+  let n = Number(document.getElementById("n").value);
+  let a = 0, b = 1, s = "";
+
+  for (let i = 1; i <= n; i++) {
+    s += a + " ";
+    let c = a + b;
+    a = b;
+    b = c;
+  }
+
+  document.getElementById("result").innerHTML = s;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+
+<html>
+<body>
+<h3>Factorial</h3>
+Enter number: <input id="n">
+<button onclick="check()">Calculate</button>
+<p id="result"></p>
+
+<script>
+function check() {
+  let n = Number(document.getElementById("n").value);
+  let fact = 1;
+
+  for (let i = 1; i <= n; i++) {
+    fact = fact * i;
+  }
+
+  document.getElementById("result").innerHTML = fact;
+}
+</script>
+</body>
+</html>
